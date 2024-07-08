@@ -3,7 +3,7 @@ addopts = [
     "-vv",
     "--cov=.",
     "--cov-report=term",
-    "--cov-fail-under=60",
+    "--cov-fail-under=80",
 ]
 pythonpath = "."
 
@@ -24,3 +24,4 @@ select = [
     "C4",  # flake8-comprehensions
     "UP",  # pyupgrade
 ]
+exclude = ["tests/*"]
